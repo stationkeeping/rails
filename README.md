@@ -1,1 +1,1 @@
-#### Useful Bits and Pieces for Rails Development
+#### Useful Bits and Pieces for Rails Development.
