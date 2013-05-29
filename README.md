@@ -1,4 +1,1 @@
-rails
-=====
-
-Useful bits and pieces
+#### Useful Bits and Pieces for Rails Development
