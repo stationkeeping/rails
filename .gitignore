@@ -1,15 +1,13 @@
-
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 # Also see Global .gitignore:  ~/.gitignore_global
-############################################################################
+# https://github.com/stationkeeping/osx/blob/master/git/.gitignore_global
 
 # Environmental Variables
-###########################
+#########################
 
 .env
 
 # Rails 
-#########
+#########################
 
 *.rbc
 *.sassc
@@ -31,7 +29,7 @@ pickle-email-*.html
 .project
 
 # Ruby 
-########
+#########################
 
 *.gem
 *.rbc
