@@ -92,12 +92,12 @@ gem 'vimeo'
 
 group :assets do
   # CSS Precompiler
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails'
   # Sass mixin library
-  gem 'compass', '>= 0.12.2'
-  gem 'compass-rails', '>= 1.0.3'
+  gem 'compass'
+  gem 'compass-rails'
   # Minifier
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
   # Automatically store and retrieve assets from S3 bucket
   gem 'asset_sync'
 end
@@ -106,7 +106,7 @@ end
 
 gem 'log4r'
 # Supress asset pipeline logging
-gem 'quiet_assets', '>= 1.0.1', :group => :development
+gem 'quiet_assets', :group => :development
 # Better Errors
 gem 'better_errors', :group => :development
 gem 'binding_of_caller', :group => :development
