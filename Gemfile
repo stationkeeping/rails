@@ -104,18 +104,18 @@ end
 
 # Debugging and Logging
 
-gem 'log4r'
+gem 'log4r', :group => [:development, :test, :staging]
 # Supress asset pipeline logging
 gem 'quiet_assets', :group => :development
 # Better Errors
 gem 'better_errors', :group => :development
 gem 'binding_of_caller', :group => :development
 # Rails Panel (Chrome Extension)
-gem 'meta_request', :group => :development
+gem 'meta_request', :group => [:development, :test, :staging]
 
 # Testing
 
-gem 'rspec-rails'
-gem 'cucumber'
-gem 'factory_girl'
-gem 'capybara'
+gem 'rspec-rails', :group => :test
+gem 'cucumber-rails', :group => :test
+gem 'factory_girl', :group => :test
+gem 'capybara', :group => :test
