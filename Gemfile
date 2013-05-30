@@ -2,23 +2,43 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-# Server
-gem "unicorn"
+# Servers
 
-# POW helpers
+# Unicorn
+gem 'unicorn'
+
+# POW management
 gem 'powder'
+
+# Routing
+
+# Slugs
+gem 'friendly_id'
+# Organise single pages
+gem "high_voltage"
 
 # Envs loaded into development
 gem 'dotenv'
 
 # Database
 gem 'pg'
+# Check for missing indexes in Database
+gem 'lol_dba'
+
+# Models
+
+# Ordering for model
+gem 'acts_as_list'
 
 # File Upload
 gem 'paperclip'
 
 # Hosting
-gem "heroku"
+gem 'heroku'
+# Process Management
+gem 'foreman'
+# Heroku Commands
+gem 'heroku_san'
 # Gzip files served from Heroku
 gem 'heroku_rails_deflate', :group => :production
 
@@ -30,18 +50,27 @@ gem 'aws-sdk'
 gem 'devise'
 gem 'rolify'
 gem 'cancan'
+gem 'omniauth'
+
+# API
 
 # JSON
 require 'json'
-
-# API
 # Serialise Models to JSON
 gem "active_model_serializers"
 
 # UI
+
+# Responsive Grids
+gem 'susy'
+# Bootstrap 
 gem 'bootstrap-sass'
+# Better forms
 gem 'simple_form'
-gem "susy"
+# Loading Spinner
+gem 'spinjs-rails'
+# Pagination
+gem 'will_paginate'
 
 # JavaScript
 gem 'jquery-rails'
@@ -55,11 +84,12 @@ gem 'ng-rails-csrf', :git => "git://github.com/xrd/ng-rails-csrf.git"
 # Markdown
 gem "redcarpet"
 
-# Slugs
-gem "friendly_id"
+# Media
+gem 'vimeo'
 
 # Gems used only for assets and not required
 # in production environments by default.
+
 group :assets do
   # CSS Precompiler
   gem 'sass-rails',   '~> 3.2.3'
@@ -69,14 +99,23 @@ group :assets do
   # Minifier
   gem 'uglifier', '>= 1.0.3'
   # Automatically store and retrieve assets from S3 bucket
-  gem "asset_sync"
+  gem 'asset_sync'
 end
 
 # Debugging and Logging
+
+gem 'log4r'
 # Supress asset pipeline logging
-gem "quiet_assets", ">= 1.0.1", :group => :development
+gem 'quiet_assets', '>= 1.0.1', :group => :development
 # Better Errors
 gem 'better_errors', :group => :development
 gem 'binding_of_caller', :group => :development
 # Rails Panel (Chrome Extension)
 gem 'meta_request', :group => :development
+
+# Testing
+
+gem 'rspec-rails'
+gem 'cucumber'
+gem 'factory_girl'
+gem 'capybara'
