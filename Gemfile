@@ -55,7 +55,7 @@ gem 'omniauth'
 # API
 
 # JSON
-require 'json'
+gem 'json'
 # Serialise Models to JSON
 gem "active_model_serializers"
 
