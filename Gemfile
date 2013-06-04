@@ -22,13 +22,15 @@ gem 'dotenv'
 
 # Database
 gem 'pg'
-# Check for missing indexes in Database
-gem 'lol_dba'
+# Granular seeding
+gem "seedbank"
 
 # Models
 
 # Ordering for model
 gem 'acts_as_list'
+# Tags 
+gem 'acts-as-taggable-on'
 
 # File Upload
 gem 'paperclip'
@@ -112,6 +114,8 @@ gem 'better_errors', :group => :development
 gem 'binding_of_caller', :group => :development
 # Rails Panel (Chrome Extension)
 gem 'meta_request', :group => [:development, :test, :staging]
+# Check for missing indexes in Database
+gem 'lol_dba'
 
 # Testing
 
